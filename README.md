@@ -1,6 +1,7 @@
 # Special topics in deep learning for big data
 
-prerequisite
+## Use a password-protected SSH key
+### prerequisite
 * should have github account 
 * add ssh-key to your github account following the [instrouction](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
@@ -15,7 +16,7 @@ cd computational-physics
 And follow the instruction. That's it! 
 
 
-# Alternative
+## Alternative using the web URL
 
 ```
 git clone https://github.com/monttj/computational-physics.git
