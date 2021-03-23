@@ -38,3 +38,29 @@ cd computational-physics
 ```
 
 And follow the instruction. That's it! 
+
+## Environment setup
+
+You need to install anaconda. In your conda environment, need to install tensorflow, Keras, notebook, ipykernel. 
+This can be done with following scripts. 
+
+If you have already downloaded git repository, update it so that the scripts can be checked out. 
+```
+cd computational-physics
+git pull 
+```
+
+Then run following scripts. This is only one time setup. 
+```
+source Miniconda2-latest-Linux-x86_64.sh
+source setup.sh
+```
+
+Finally, run the jupyter
+```
+./jupyter.sh 
+```
+
+
+
+
