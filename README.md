@@ -52,8 +52,8 @@ git pull
 
 Then run following scripts. This is only one time setup. 
 ```
-source Miniconda2-latest-Linux-x86_64.sh
-source setup.sh
+./Miniconda2-latest-Linux-x86_64.sh
+./setup.sh
 ```
 
 Finally, run the jupyter
