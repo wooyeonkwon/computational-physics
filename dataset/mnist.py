@@ -76,7 +76,7 @@ def init_mnist():
     dataset = _convert_numpy()
     print("Creating pickle file ...")
     with open(save_file, 'wb') as f:
-        pickle.dump(dataset, f, -1)
+        pickle.dump(dataset, f, -1, 'latin1')
     print("Done!")
 
 def _change_one_hot_label(X):
@@ -106,7 +106,9 @@ def load_mnist(normalize=True, flatten=True, one_hot_label=False):
         init_mnist()
         
     with open(save_file, 'rb') as f:
-        dataset = pickle.load(f)
+        data = pickle._Unpickler(f)
+        data.encoding = 'latin1'
+        dataset = data.load()
     
     if normalize:
         for key in ('train_img', 'test_img'):
