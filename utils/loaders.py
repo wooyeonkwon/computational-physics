@@ -190,7 +190,6 @@ def load_safari(folder):
     seed = np.random.randint(1, 10e6)
 
     for txt_name in txt_name_list:
-        print(txt_name)
         try:
             x = np.load(txt_name, allow_pickle=True)
             x = (x.astype('float32') - 127.5) / 127.5
