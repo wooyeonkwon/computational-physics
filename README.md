@@ -4,6 +4,8 @@
 If you have accout for server @HYU\_PHY, you can access the server using the following command:
 ```bash
 ssh -X -Y {YourID}@{ServerIP}
+export CONDA_ENVS_PATH=/opt/anaconda3/envs/:$CONDA_ENVS_PATH
+conda activate py39-cuda12.8
 ```
 
 ## Environment set up
