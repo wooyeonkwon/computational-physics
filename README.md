@@ -4,8 +4,6 @@
 If you have accout for server @HYU\_PHY, you can access the server using the following command:
 ```bash
 ssh -X -Y {YourID}@{ServerIP}
-export CONDA_ENVS_PATH=/opt/anaconda3/envs/:$CONDA_ENVS_PATH
-conda activate py39-cuda12.8
 ```
 
 ## Environment set up
@@ -43,7 +41,6 @@ conda activate py39-cuda12.8 # this env name is set in env.yaml file.
 To use Jupyter Notebook:
 1. At the server
 ```
-export CONDA_ENVS_PATH=/opt/anaconda3/envs/:$CONDA_ENVS_PATH
 conda activate py39-cuda12.8
 jupyter notebook --no-browser
 ```
